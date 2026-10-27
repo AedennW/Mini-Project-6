@@ -1,0 +1,320 @@
+
+body {
+    background-color: aliceblue;
+    background-image: url("images/wp10084718.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #eca17e;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+.timer-div {
+    margin-left: auto;
+}
+
+.welcome-div, .question-div, .result-div {
+    background-color: #FB9B86;
+    border-radius: 15px;
+    width: 700px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.welcome-div {
+    min-height: 300px;
+}
+
+.welcome-div h2, .result-div h2 {
+    font-size: 30px;
+}
+
+.welcome-div h4 {
+    font-size: 22px;
+}
+
+.question-info {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background-color: white;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #e9653d;
+    width: 20%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.question-div h3 {
+    font-size: 21px;
+    margin: 25px 0;
+}
+
+.answers-div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    color: #e9653d;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.answer-option:hover {
+    border-color: #e9653d;
+}
+
+.answer-option:has(input:checked) {
+    border-color: #e9653d;
+    background-color: #fff0e9;
+}
+
+.answer-option input {
+    width: 18px;
+    height: 18px;
+    accent-color: #e9653d;
+    cursor: pointer;
+}
+
+button {
+    background-color: white;
+    color: #e9653d;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#answer-message {
+    font-weight: 600;
+}
+
+#final-score {
+    font-size: 26px;
+}
+
+[hidden] {
+body {
+    background-color: aliceblue;
+    background-image: url("images/wp10084718.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #eca17e;
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+.timer-div {
+    margin-left: auto;
+}
+
+.welcome-div, .question-div, .result-div {
+    background-color: #FB9B86;
+    border-radius: 15px;
+    width: 700px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.welcome-div {
+    min-height: 300px;
+}
+
+.welcome-div h2, .result-div h2 {
+    font-size: 30px;
+}
+
+.welcome-div h4 {
+    font-size: 22px;
+}
+
+.question-info {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background-color: white;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #e9653d;
+    width: 20%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.question-div h3 {
+    font-size: 21px;
+    margin: 25px 0;
+}
+
+.answers-div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    color: #e9653d;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.answer-option:hover {
+    border-color: #e9653d;
+}
+
+.answer-option:has(input:checked) {
+    border-color: #e9653d;
+    background-color: #fff0e9;
+}
+
+.answer-option input {
+    width: 18px;
+    height: 18px;
+    accent-color: #e9653d;
+    cursor: pointer;
+}
+
+button {
+    background-color: white;
+    color: #e9653d;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#answer-message {
+    font-weight: 600;
+}
+
+#final-score {
+    font-size: 26px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .timer-div h3 {
+        font-size: 14px;
+    }
+
+    .welcome-div, .question-div, .result-div {
+        margin: 35px auto;
+        padding: 20px;
+    }
+
+    .question-div h3 {
+        font-size: 18px;
+    }
+}
+
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .timer-div h3 {
+        font-size: 14px;
+    }
+
+    .welcome-div, .question-div, .result-div {
+        margin: 35px auto;
+        padding: 20px;
+    }
+
+    .question-div h3 {
+        font-size: 18px;
+    }
+}

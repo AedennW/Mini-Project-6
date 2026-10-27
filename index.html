@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aedenn's Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Aedenn's Quiz</h1>
+        <div class="timer-div">
+            <h3 id="timer">Timer: 00:00</h3>
+        </div>
+    </header>
+    <main>
+        <section class="welcome-div" id="welcome-div">
+            <h2>Welcome to the Quiz!</h2>
+            <h4>Test Your Knowledge</h4>
+            <p>Answer all five questions and see how many you get correct!</p>
+            <p class="question-info">5 Questions | Multiple Choice</p>
+            <button id="start-button">Begin Quiz</button>
+        </section>
+        <section class="question-div" id="question-div" hidden>
+            <p id="progress-text">Question 1 of 5</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <h2 id="question-number">Question 1</h2>
+            <h3 id="question-text"></h3>
+            <div class="answers-div" id="answers-div"></div>
+            <p id="answer-message" aria-live="polite"></p>
+            <button id="next-button" disabled>Next Question</button>
+        </section>
+        <section class="result-div" id="result-div" hidden>
+            <h2>Quiz Complete!</h2>
+            <h3 id="final-score"></h3>
+            <p id="final-message"></p>
+            <p id="final-time"></p>
+            <button id="restart-button">Restart Quiz</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
